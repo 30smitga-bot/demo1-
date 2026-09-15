@@ -1,4 +1,55 @@
-<a-sphere position="-3 -2 -6" color="blue"
+<!DOCTYPE html>
+<html>
+<head>
+    <title>7 Object Animation</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
+
+<body>
+<a-scene>
+
+   
+
+    <a-box position="-3 2 -6" color="lightgreen"
+        animation="property: position; from: -5 8 -6; to: -5 6 -8; loop: true; dir: alternate; dur: 1500"
+        animation__rotation="property: rotation; to: 360 360 0; loop: true; dur: 3000"
+        animation__color="property: color; from: lightgreen; to: yellow; loop: true; dir: alternate; dur: 5000">
+    </a-box>
+
+    <a-sphere position="-3 -2 -6" color="blue"
         animation="property: scale; from: 2 2 2; to: 3.8 2.8 2.8; loop: true; dir: alternate; dur: 1200"
         animation__opacity="property: opacity; from: 1; to: 0.3; loop: true; dir: alternate; dur: 1200">
     </a-sphere>
+
+    <a-cylinder position="2 3 -7" color="lightpink"
+        animation="property: rotation; to: 0 360 360; loop: true; dur: 2500"
+        animation__position="property: position; from: -2 3 -7; to: -2 1 -6; loop: true; dir: alternate; dur: 1800">
+    </a-cylinder>
+
+    <a-cone position="-5 1 -6" color="red"
+        animation="property: position; from: -5 1 -6; to: 0 1 -6; loop: true; dir: alternate; dur: 4000"
+        animation__rotation="property: rotation; to: 360 0 360; loop: true; dur: 2000">
+    </a-cone>
+
+    <a-torus position="6 7 -6" color="purple" radius="1.2" radius-tubular="0.15"
+        animation="property: rotation; to: 360 360 360; loop: true; dur: 2000"
+        animation__scale="property: scale; from: 1 1 1; to: 1.5 1.5 1.5; loop: true; dir: alternate; dur: 1500">
+    </a-torus>
+
+    <a-octahedron position="-2 5 -6" color="green"
+        animation="property: color; from: cyan; to: magenta; loop: true; dir: alternate; dur: 1000"
+        animation__position="property: position; from: -4 5 -6; to: 0 5 -6; loop: true; dir: alternate; dur: 2500">
+    </a-octahedron>
+
+    <a-dodecahedron position="2 7 -6" color="yellow"
+        animation="property: visible; from: true; to: false; loop: true; dir: alternate; dur: 50"
+        animation__rotation="property: rotation; to: 360 360 360; loop: true; dur: 3000">
+    </a-dodecahedron>
+
+    <a-text value="7 OBJECT ANIMATION" position="-2.5 6.5 -6" color="white" width="6"></a-text>
+
+    <a-camera position="0 2 4"></a-camera>
+
+</a-scene>
+</body>
+</html>
